@@ -1,3 +1,12 @@
+"""
+Dog class
+
+"""
+# own modules
+from Animal import Animal,hey
+import sys
+
+
 class Dog():
     # class attribute
     animal_group="mammal"
@@ -7,7 +16,10 @@ class Dog():
     def __init__(self, name=None, age=0):
         # Instance attributes
         self.name = name
+        # Public Instance variables
         self.age = age
+        # "non-public" instance vars [Encapsulation]
+        self._owner = None
 
     # instance methods
     def tag(self):
@@ -27,7 +39,9 @@ class Corgi(Dog):
         return '{} is sleeping zZZZz'.format(self.name)
 
 
-
+# own modules
+a=Animal()
+hey()
 
 # Code
 x=Dog()
@@ -55,3 +69,11 @@ terry=Corgi("Terry",2)
 print(terry.sleep())
 
 print(isinstance(terry,Corgi))
+
+# DIR
+print(dir(doggy))
+
+random_var=""
+print(dir())
+del random_var
+print(dir())
