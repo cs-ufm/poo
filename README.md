@@ -1,4 +1,3 @@
-# poo
 
 
 # Exercises:
